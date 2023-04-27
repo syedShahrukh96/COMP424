@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--    
+            Started date: 03/10/2023............................
+            Html code for Welcome page..........................
+            Name changed to TripTime now its a child of TripJoy.
+            its a welcome page and navigates toward home page...
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo on tab -->
+    <link rel="shortcut icon" type="image/png" href="../Media/Image/logo/travel-logo.png">
+
+    <!-- Name on tab -->
+    <title>TripTime</title>
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="../CSS/Welcome.css"> 
+</head>
+
+<body>
+    <div id="welcome-overlay">
+		<h1>Welcome to TripTime</h1>
+        <h3>A brand under the TripJoy umbrella</h3>
+        <h6>Click anywhere to start</h6>
+    </div>
+
+    <!-- script when click anywhere on page it will navigate to homepage -->
+    <script>
+		document.addEventListener("click", function() {
+			window.location.href = "TripTime.html";
+		});
+	</script>
+
+
+</body>
+</html>
