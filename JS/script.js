@@ -40,3 +40,17 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
     console.log("login Close Button");
 });
+
+
+// For video in home page
+const videoSlider = document.querySelector("#video-slider");
+const videoControls = document.querySelectorAll(".vid-btn");
+let index = 0;
+
+function playNextVideo() {
+  videoSlider.src = videoControls[index].getAttribute("data-src");
+  index = (index + 1) % videoControls.length;
+}
+
+// Call playNextVideo function every 7 seconds
+setInterval(playNextVideo, 7000);
