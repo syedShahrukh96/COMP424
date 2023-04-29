@@ -5,7 +5,6 @@ let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
-let videoBtn = document.querySelectorAll('.vid-btn');
 
 
 
@@ -31,6 +30,7 @@ searchBtn.addEventListener('click', () =>{
     console.log("search button");
 });
 
+    //login page
 formBtn.addEventListener('click', () =>{
     loginForm.classList.add('active');
     console.log("Login button");
