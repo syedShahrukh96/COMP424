@@ -1,0 +1,265 @@
+/* Using Nunito and sans-serif mostly 
+use in webpages and its look clean*/
+*{
+    margin:0; padding:0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+
+/* pseudo-element  to select a portion of text that has been highlighted */
+*::selection{
+    background: #ffa500;
+    color: #fff;
+}
+
+/* scrolling behavior for the page to be smooth instead of abrupt */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem; 
+    scroll-behavior: smooth;
+}
+
+/* section element 2rem on the top and bottom, and 9% on the left and right */
+section{
+    padding: 2rem 9%;
+}
+/* ---------------------------------------------- */
+  /* modifying nev-bar  */
+  header{
+    background-color: #426255;
+    position: fixed;
+    top: 0; left: 0; right : 0;
+    background: #426255;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+/* modifying logo TripTime */
+header .logo{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    font-size: 2.7rem;
+    color:#ffa500;
+
+}
+/* modifying logo TripTime Ends */
+
+/* modifying nev-bar text */
+header .navbar a{
+    color: #ffff;
+    font-size: 2rem;
+    margin:0 .8rem;
+}
+
+header .navbar a:hover{
+    color:#ffa500;
+}
+
+/* login and search btn */
+header .icons i{
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover{
+  color:#ffa500;
+}
+
+/* search Bar */
+header .search-bar-container{
+  position: absolute;
+  top:100%; left: 0; right:0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255 ,255 ,255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar{
+  width:100%;
+  padding:1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container .label{
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container .label:hover{
+  color:#ffa500;
+
+}
+
+
+#menu-bar{
+  color: #fff;
+  border: .1rem solid #fff;
+  border-radius: .5rem;
+  font-size: 3rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+section h1{
+    margin-top: 7rem;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    font-size: 3rem;
+    color: #000000;
+}
+
+
+   .PlacesSwiper .card{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background-color: #f5f5f5;
+    /* height: 60rem; */
+    /* width:45rem ; */
+  }
+  
+  
+
+  .PlacesSwiper .place-slider{
+      padding-bottom: 2rem;
+      
+      display: flex;
+  }
+
+  .PlacesSwiper .swiper-slide:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+  }
+  
+  .PlacesSwiper .card img{
+    width: 35rem;
+    border-radius:2%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .PlacesSwiper .card h2{
+    color: #333;
+    font-size: 2.0rem;
+    padding: 1rem 0;
+  }
+  
+  .PlacesSwiper .card p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .location{
+    font-size: 1.5rem;
+  }
+.heart{
+  font-size: 2rem;
+}
+
+.heart:hover{
+  color: rgb(187, 109, 0);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 991px){
+  
+    header{
+      padding: 2rem;
+    }
+  
+    section{
+      padding: 2rem;
+    }
+  
+}
+
+@media (max-width:768px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top: 100%; right: 0; left: 0;
+      background: #333;
+      border-top: .1rem solid  rgba(255 ,255 ,255, .2);
+      padding: 1rem 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+  
+    }
+  
+    header .navbar a{
+      display: block;
+      border-radius: .5rem;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      background: #222 ;
+  
+    }   
+
+    @media (max-width: 450px){
+
+      html{
+        font-size: 50%;
+      }
+  
+      .heading span{
+        font-size: 2.5rem;
+      }
+    }
+  
+    .contact .row form .inputBox input{
+      width: 100%;
+    }
+  
+  }

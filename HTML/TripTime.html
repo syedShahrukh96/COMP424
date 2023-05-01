@@ -49,11 +49,10 @@
             <i class="fas fa-user" id="login-btn"></i>
         </div>
 
-        <form action="serchBar" class="search-bar-container" id="search-form">
-            <input type="search"  id="search-bar" placeholder="search Place here...">
-            <label for="search-bar" class="fas fa-search"></label>
-            <!-- <button type="submit" onclick="searchPlace()"><i class="fas fa-search" id="search-btn"></i></button>     -->
-        </form>
+        <div class="search-bar-container" id="search-form">
+            <input type="text"  id="search-bar" placeholder="search Place here...">
+            <button class= label type="submit" id="search-btn" onclick="searchPlace()"><i class="fas fa-search"></i></button>
+        </div>
 
     </header>
 
@@ -101,11 +100,163 @@
     </section>
     <!-- home section ends -->
 
-    <!-- Favorite Place section starts -->
 
 
 
-    <!-- Favorite Place section ends -->
+<!-- Favourite places section starts from here -->
+<section class="Favorite" id="Favorite">
+    <!-- Each letter is selected using span and styling is applied (same as all headings) -->
+        <h1 class="heading">
+            <span>F</span>
+            <span>a</span>
+            <span>v</span>
+            <span>o</span>
+            <span>r</span>
+            <span>i</span>
+            <span>t</span>
+            <span>e</span>
+            <span class="space"></span>
+            <span>p</span>
+            <span>l</span>
+            <span>a</span>
+            <span>c</span>
+            <span>e</span>
+        </h1>
+    
+        <!-- Swiper bundle is used here to create drag functionality for each individual block element -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Total 8 places are used -->
+                    <div class="swiper-slide">
+                        <!-- Each favourite place is taken in a block using box div -->
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav1.webp" alt="image/jpg">
+                            <!-- stars icons are used to represent ratings for each individual place  -->
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Disney World, Orlando Florida</h3>
+                            <p>Disneyland, located in Anaheim, California, is a world-renowned theme park with iconic attractions and entertainment shows, famous for its eight themed lands and classic rides, appealing to families and Disney fans.</p>
+                          
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav2.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Universal Studios Florida</h3>
+                            <p>Universal Studios Florida is a theme park located in Universal Orlando Resort, Florida. It features rides and attractions based on popular movies and TV shows, including Harry Potter, Transformers, and The Simpsons.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav3.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Niagara Falls, New York</h3>
+                            <p>Niagara Falls is a city in New York, located on the Niagara River and home to the famous Niagara Falls State Park. It is a popular tourist destination known for its natural beauty and attractions.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav4.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>San Diego, California </h3>
+                            <p>San Diego is a coastal city located in Southern California, USA. Known for its beautiful beaches, mild climate, and cultural attractions, it is a popular destination for tourists and residents alike.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav5.webp" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Hershey Park, Pennsylvania</h3>
+                            <p>Hersheypark is a theme park in Hershey, Pennsylvania. It features roller coasters, water rides, and family-friendly attractions. The park is owned by The Hershey Company and has a chocolate theme throughout.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav6.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>LEGOLAND, California </h3>
+                            <p>LEGOLAND California is a theme park in Carlsbad, California, featuring over 60 rides and attractions designed for families with children ages 2 to 12. The park is themed around LEGO toys and features LEGO sculptures throughout.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav7.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Washington, D.C.</h3>
+                            <p>Washington, D.C. is the capital city of the United States, located on the east coast of the country. It is home to many famous landmarks and government buildings, including the White House and the National Mall.</p>
+    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../Media/Image/Favorite/fav8.jpg" alt="image/jpg">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Chicago, Illinois</h3>
+                            <p>Chicago is a major city in the midwestern United States, located on the shore of Lake Michigan. It is known for its architecture, museums, music, and sports teams, including the Chicago Cubs and Chicago Bulls.</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </section>
+
+ <!-- Favorite Place section ends -->
+
+
 
 
     
@@ -159,7 +310,7 @@
 
     
     
-    <!-- packages section starts -->
+    
     <!-- packages section starts -->
 
 <section class="packages" id="packages" >
@@ -450,10 +601,156 @@
     <!-- gallery sections ends -->
 
     <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+             <span>r</span>
+             <span>e</span>
+             <span>v</span>
+             <span>i</span>
+             <span>e</span>
+             <span>w</span>
+        </h1>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user1.jpg" alt="image/jpg">
+                        <h3>Emily R</h3>
+                        <p>Amazing travel packages and excellent customer service. Would definitely recommend to anyone planning their next adventure!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user2.jpg" alt="image/jpg">
+                        <h3>Sarah K</h3>
+                        <p>Booking with TripJoy was a breeze! The website is user-friendly, and the travel options are fantastic.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user3.jpg" alt="image/jpg">
+                        <h3>Sam D</h3>
+                        <p>I had the trip of a lifetime thanks to TripJoy! Their attention to detail and personalized service made all the difference.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user4.jpg" alt="image/jpg">
+                        <h3>Peter D</h3>
+                        <p>Thanks to TripJoy, I was able to explore new destinations and make memories that will last a lifetime. Highly recommend!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
     <!-- review section ends -->
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+             <span>r</span>
+             <span>e</span>
+             <span>v</span>
+             <span>i</span>
+             <span>e</span>
+             <span>w</span>
+        </h1>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user1.jpg" alt="image/jpg">
+                        <h3>Emily R</h3>
+                        <p>Amazing travel packages and excellent customer service. Would definitely recommend to anyone planning their next adventure!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user2.jpg" alt="image/jpg">
+                        <h3>Sarah K</h3>
+                        <p>Booking with TripJoy was a breeze! The website is user-friendly, and the travel options are fantastic.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user3.jpg" alt="image/jpg">
+                        <h3>Sam D</h3>
+                        <p>I had the trip of a lifetime thanks to TripJoy! Their attention to detail and personalized service made all the difference.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../Media/Image/Reviews/user4.jpg" alt="image/jpg">
+                        <h3>Peter D</h3>
+                        <p>Thanks to TripJoy, I was able to explore new destinations and make memories that will last a lifetime. Highly recommend!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- review section ends -->
 
     <!-- Contact section starts -->
 
@@ -496,9 +793,23 @@
 
 
     <!-- Brand section ends -->
+    <section class="brand-container">
 
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../Media/Image/Brands/airbnb.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/BkCom.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/Expedia-Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/Kayank.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/Orbitz-logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/TA.png" alt=""></div>
+                <div class="swiper-slide"><img src="../Media/Image/Brands/TravelLo.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand section ends -->
     <!-- footer section start-->
-    
+
     <!-- At footer, its shows About us, branch location, quick links like home, book etc all that we have in nav bar, and follow us -->
     <section class="footer">
         <div class="box-container" >
@@ -533,13 +844,6 @@
     </section>
 
     <!-- footer section end-->
-
-
-
-
-
-
-
 
     <!-- Swipper JS --> 
     <script src="../JS/swiper-bundle.min.js"></script>

@@ -6,7 +6,7 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
-
+const submitBtn = document.querySelector('#submit-btn');
 
 
 
@@ -41,7 +41,16 @@ formClose.addEventListener('click', () =>{
     console.log("login Close Button");
 });
 
+<<<<<<< HEAD
+// Used to call AIRBNB page with user input data.
+=======
+// Script for swiper functionality
 
+
+
+
+
+>>>>>>> 8f3a224c492b50c7534d76a0860054b7312ff832
 const form = document.querySelector('#search-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // prevent default form submission behavior
@@ -67,3 +76,29 @@ function playNextVideo() {
 
 // Call playNextVideo function every 7 seconds
 setInterval(playNextVideo, 7000);
+
+
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '3175a60233msh10bd93a81a5f8b0p171adfjsnd5e2df15191d',
+		'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+	}
+};
+   
+	async function searchPlace(){
+		const searchText = document.getElementById("search-bar").value;
+		localStorage.setItem('placeName',searchText);
+		const res = await fetch(`https://travel-advisor.p.rapidapi.com/locations/search?query=${searchText}&limit=4`, options)
+		.then(response => response.json());
+		const firstLocationId = res.data[0].result_object.location_id;
+		const places = await fetch(`https://travel-advisor.p.rapidapi.com/attractions/list?location_id=${firstLocationId}&limit=6`, options)
+			.then(response => response.json());
+			console.log(places);
+			
+			localStorage.setItem('apiData',JSON.stringify(places.data));
+			window.location.href= 'place.html';
+			//showData();
+			
+}

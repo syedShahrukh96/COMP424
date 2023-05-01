@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TripJoy </title>
+        <link rel="shortcut icon" type="image/png" href="../Media/Image/logo/travel-logo.png">
+        <!-- Slider Link -->
+        <link rel="stylesheet" href="../CSS/swiper-bundle.min.css"/>
+    
+        <!-- font awsome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+        <!-- places css-->
+        <link rel="stylesheet" href="../CSS/placest.css">
+	</head>
+	<body>
+        <header>
+
+            <div id="menu-bar" class="fa fa-bars"></div>
+    
+            <a href="TripTime.html#home" class="logo"><span>T</span>ripTime</a>
+    
+             <nav class="navbar">
+                <a href="TripTime.html#home">Home</a>
+                <a href="TripTime.html#Favorite">Favorite</a>
+                <a href="TripTime.html#book">Book</a> 
+                <a href="TripTime.html#packages">Packages</a> 
+                <a href="TripTime.html#services">Services</a>
+                <a href="TripTime.html#gallery">gallery</a>
+                <a href="TripTime.html#review">review</a>
+                <a href="TripTime.html#contact">contact</a>
+             </nav>
+    
+             <!--icon for searchBar and login-->
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+            </div>
+    
+        <div class="search-bar-container" id="search-form">
+            <input type="text"  id="search-bar" placeholder="search Place here...">
+            <button class= label type="submit" id="search-btn" onclick="searchPlace()"><i class="fas fa-search"></i></button>
+        </div>
+    
+        </header>
+
+	<section class="PlacesSwiper">
+            <h1 id="headName"></h1>
+
+
+                <div class="swiper mySwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="card" id="card1">
+                                
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"> </p>
+                                
+                                <div class="location" id="location1"> </div>
+                                <button type="favorite" value="favorite">♡</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="card" id="card2">
+                                
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"></p>
+                                
+                                <div class="location" id="location2"></div>
+                                <button class="heart" type="favorite" value="favorite">♡</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card3">
+
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"></p>
+                                
+                                <div class="location" id="location3"></div>
+                                <button class="heart" type="favorite" value="favorite">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card4">
+
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"></p>
+                                
+                                <div class="location" id="location4"></div>
+                                <button class="heart" type="favorite" value="favorite">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card5">
+
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"></p>
+                                
+                                <div class="location" id="location5"></div>
+                                <button class="heart" type="favorite" value="favorite">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" id="card6">
+
+                                <img class="image" src="" alt="">
+                                <h2 class="title">Loading...</h2>
+                                <p class="description"></p>
+                                
+                                <div class="location" id="location6"></div>
+                                <button class="heart" type="favorite" value="favorite">♡</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+	</section>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const nameOfPlace = localStorage.getItem('placeName').toString();
+			const heading = document.getElementById('headName');
+			heading.textContent = nameOfPlace.toString();
+			showData();
+		
+		});
+		
+		function showData(){
+			const data = JSON.parse(localStorage.getItem('apiData'));
+			data.forEach((place, index) => {
+				const card = document.getElementById(`card${index + 1}`);
+				card.style.visibility ='visible';
+				//update the image
+			const image = card.querySelector('.image');
+			image.src = place.photo.images.small.url;
+			image.alt = place.name;
+				// update the title
+				const title = card.querySelector('.title');
+				title.textContent = place.name;
+				const description = card.querySelector('.description');
+			description.textContent = place.description;
+				const location = card.querySelector('.location');
+				const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.address.toString())}`;
+				const linkElement = document.createElement("a");
+                linkElement.href = mapLink;
+                linkElement.target = "_blank";
+                linkElement.innerText = place.address;
+                linkElement.onclick = () => {
+                   window.open(mapLink, "_blank");
+                  return false;
+      };
+      
+      document.getElementById(`location${index + 1}`).appendChild(linkElement);
+			  // location.textContent = place.address;
+			});
+		}
+		</script>
+
+
+        
+
+
+       <script src="../JS/swiper-bundle.min.js" ></script>
+       
+        <!--custom js file link-->
+        <script src="../JS/SearchLocation.js"></script>
+
+	</body>
+	
+</html>
