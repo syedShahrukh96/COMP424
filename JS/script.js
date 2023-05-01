@@ -42,7 +42,51 @@ formClose.addEventListener('click', () =>{
 });
 
 
-const form = document.querySelector('#search-form');
+// Swipe for Favorite and Review page
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+// Swipe for brands
+    var swiper = new Swiper(".brand-slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+          },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+
+
+// calling AIRBNB url with our inputs
+const form = document.querySelector('#book-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // prevent default form submission behavior
   const placeName = document.querySelector('#place-name').value;
@@ -53,6 +97,9 @@ form.addEventListener('submit', function(event) {
   const url = `https://www.airbnb.com/s/${placeName}/homes?adults=${adults}&checkin=${arrivalDate}&checkout=${leavingDate}&children=${childrens}`;
   window.open(url, '_blank'); // open URL in a new tab/window
 });
+
+
+
 
 
 // For video in home page
@@ -70,6 +117,9 @@ setInterval(playNextVideo, 7000);
 
 
 
+
+
+// API to get data for search places
 const options = {
 	method: 'GET',
 	headers: {

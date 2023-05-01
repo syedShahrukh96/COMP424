@@ -296,54 +296,7 @@ color:#666;
 
 
 /* favorite */
-/* Styling for Favourite section starts from here */
-.Favorite {
-  margin-top: 3rem;
-  background-color: #444;
-}
 
-.Favorite .review-slider{
-  padding-bottom: 2rem;
-}
-
-/* Styling for the box used */
-.Favorite .box{
-  background-color: #edfeff;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-  border-radius: .5rem;
-}
-
-/* Styling for image inside the box */
-.Favorite .box img{
-  margin-top:3rem;
-  height: 30rem;
-  width: 53rem;
-  border-radius:2%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
-/* Styling for heading used */
-.Favorite .box h3{
-  color: #333;
-  font-size: 2.5rem;
-  padding: 1rem 0;
-}
-
-/* Styling for paragraph text used inside the box */
-.Favorite .box p{
-  color: #666;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-}
-
-/* Styling for start icons used inside the box */
-.Favorite .box .stars i{
-  color: #ffb81e;
-  font-size: 1.7rem;
-}
 
 /* Styling for Favourite section starts from here */
 .Favorite {
@@ -351,7 +304,7 @@ color:#666;
   background-color: #444;
 }
 
-.Favorite .review-slider{
+.Favorite .review-slider{ 
   padding-bottom: 2rem;
 }
 
@@ -631,6 +584,9 @@ color:#666;
   margin-top: 3rem;
   background-color: #fff6e3;
 }
+.review  .mySwiper{
+  cursor: pointer;
+}
 
 .review .review-slider{
   padding-bottom: 2rem;
@@ -721,6 +677,21 @@ color:#666;
   }
 
 /* brand */
+/* Styling for sponsor brands starts from here */
+  .brand-container{
+    margin-top: 10rem;
+    text-align: center;
+  }
+  
+  .brand-slider{
+    cursor: pointer;
+  }
+  
+  .brand-container .brand-slider .swiper-wrapper img{
+  height: 10rem;
+  width: 25rem;
+  }
+  
 
 /* footer */
 .footer{
@@ -790,30 +761,6 @@ color:#666;
   .footer .credit .tripjoy{
     color: #ffa500;
   }
-  /* Styling for sponsor brands starts from here */
-.brand-container{
-  margin-top: 10rem;
-  text-align: center;
-}
-
-.brand-container .brand-slider .swiper-wrapper img{
-height: 10rem;
-width: 25rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body{
     height: 300rem;
@@ -886,4 +833,12 @@ body{
   
   }
   
-  
+  /* planning */
+@media screen and (max-width: 767px) {
+  .box-container {
+    flex-direction: column;
+  }
+  .box {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
