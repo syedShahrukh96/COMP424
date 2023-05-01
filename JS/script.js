@@ -41,16 +41,7 @@ formClose.addEventListener('click', () =>{
     console.log("login Close Button");
 });
 
-<<<<<<< HEAD
-// Used to call AIRBNB page with user input data.
-=======
-// Script for swiper functionality
 
-
-
-
-
->>>>>>> 8f3a224c492b50c7534d76a0860054b7312ff832
 const form = document.querySelector('#search-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // prevent default form submission behavior

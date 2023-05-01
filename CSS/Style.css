@@ -153,14 +153,9 @@ header .search-bar-container .label{
     margin-left: 1.5rem;
 }
 
-<<<<<<< HEAD
-header .search-bar-container .label:hover{
-    color:var(--orange);
-=======
-header .search-bar-container label:hover{
-    color:#ffa500;
->>>>>>> 8f3a224c492b50c7534d76a0860054b7312ff832
 
+header .search-bar-container .label:hover{
+    color:#ffa500;
 }
 
 /* For login-form  */
