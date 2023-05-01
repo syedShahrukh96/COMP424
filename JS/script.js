@@ -42,6 +42,19 @@ formClose.addEventListener('click', () =>{
 });
 
 
+const form = document.querySelector('#search-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // prevent default form submission behavior
+  const placeName = document.querySelector('#place-name').value;
+  const adults = document.querySelector('#adults').value;
+  const childrens = document.querySelector('#children').value;
+  const arrivalDate = document.querySelector('#checkin').value;
+  const leavingDate = document.querySelector('#checkout').value;
+  const url = `https://www.airbnb.com/s/${placeName}/homes?adults=${adults}&checkin=${arrivalDate}&checkout=${leavingDate}&children=${childrens}`;
+  window.open(url, '_blank'); // open URL in a new tab/window
+});
+
+
 // For video in home page
 const videoSlider = document.querySelector("#video-slider");
 const videoControls = document.querySelectorAll(".vid-btn");
