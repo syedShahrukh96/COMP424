@@ -6,7 +6,7 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
-
+const submitBtn = document.querySelector('#submit-btn');
 
 
 
@@ -40,6 +40,11 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
     console.log("login Close Button");
 });
+
+// Script for swiper functionality
+
+
+
 
 
 const form = document.querySelector('#search-form');

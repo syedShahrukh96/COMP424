@@ -1,10 +1,6 @@
 /* for google font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-/* root element, define orange color */
-:root{
-    --orange: #ffa500;
-}
 
 /* Using Nunito and sans-serif mostly 
 use in webpages and its look clean*/
@@ -21,7 +17,7 @@ use in webpages and its look clean*/
 
 /* pseudo-element  to select a portion of text that has been highlighted */
 *::selection{
-    background: var(--orange);
+    background: #ffa500;
     color: #fff;
 }
 
@@ -47,7 +43,7 @@ section{
 .heading span{
     font-size: 3.5rem;
     background: #426255;
-    color: var(--orange);
+    color: #ffa500;
     border-radius: .5rem;
     padding: .2rem 1rem;
 }
@@ -69,7 +65,7 @@ section{
 }
   /* Updated colors: After hovering: Black for text and orange after hovering */
   .btn:hover{
-    background:rgba(255,165,0,2);
+    background:#ffa500;
     color:black;
   }
   /* modifying nev-bar  */
@@ -95,7 +91,7 @@ header .logo{
   
 header .logo span{
       font-size: 2.7rem;
-      color:var(--orange);
+      color:#ffa500;
 
   }
   /* modifying logo TripTime Ends */
@@ -108,7 +104,7 @@ header .navbar a{
   }
   
 header .navbar a:hover{
-      color:var(--orange);
+      color:#ffa500;
   }
 
   /* login and search btn */
@@ -120,7 +116,7 @@ header .icons i{
 }
 
 header .icons i:hover{
-    color:var(--orange);
+    color:#ffa500;
 }
 
   /* search Bar */
@@ -157,7 +153,7 @@ header .search-bar-container label{
 }
 
 header .search-bar-container label:hover{
-    color:var(--orange);
+    color:#ffa500;
 
 }
 
@@ -207,7 +203,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form .box:focus{
-  border-color: var(--orange);
+  border-color: #ffa500;
 }
 .login-form-container form #remember{
   margin: 2rem 0;
@@ -230,7 +226,7 @@ color:#666;
 }
 
 .login-form-container form p a{
-  color:var(--orange);
+  color:#ffa500;
 }
 
 
@@ -299,6 +295,54 @@ color:#666;
 
 
 /* favorite */
+/* Styling for Favourite section starts from here */
+.Favorite {
+  margin-top: 3rem;
+  background-color: #444;
+}
+
+.Favorite .review-slider{
+  padding-bottom: 2rem;
+}
+
+/* Styling for the box used */
+.Favorite .box{
+  background-color: #edfeff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+}
+
+/* Styling for image inside the box */
+.Favorite .box img{
+  margin-top:3rem;
+  height: 30rem;
+  width: 53rem;
+  border-radius:2%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Styling for heading used */
+.Favorite .box h3{
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+/* Styling for paragraph text used inside the box */
+.Favorite .box p{
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Styling for start icons used inside the box */
+.Favorite .box .stars i{
+  color: #ffb81e;
+  font-size: 1.7rem;
+}
 
 /* Styling for Favourite section starts from here */
 .Favorite {
@@ -471,7 +515,7 @@ color:#666;
 /* Styling used for starts icon used inside the box */
 .packages .box-container .box .content .stars i{
   font-size: 1.7rem;
-  color: var(--orange);
+  color: #ffa500;
 }
 
 /* Styling used for price text used inside the box */
@@ -505,7 +549,7 @@ color:#666;
   .services .box-container .box i{
     padding: 1rem;
     font-size: 5rem;
-    color: var(--orange);
+    color: #ffa500;
   }
   
   .services .box-container .box h3{
@@ -565,12 +609,12 @@ color:#666;
 
 .gallery .box-container .box .content h3{
   font-size: 2.5rem;
-  color: var(--orange)
+  color: #ffa500
 }
 
 .gallery .box-container .box .content h2{
   font-size: 1.8rem;
-  color: var(--orange)
+  color: #ffa500
 }
 
 .gallery .box-container .box .content p{ 
@@ -728,7 +772,7 @@ color:#666;
   }
   
   .footer .box-container .box a:hover , .box1 a:hover , .box2 a:hover{
-   color: var(--orange);
+   color: #ffa500;
    text-decoration: underline;
   }
   
@@ -743,7 +787,7 @@ color:#666;
   }
   
   .footer .credit .tripjoy{
-    color: var(--orange);
+    color: #ffa500;
   }
   /* Styling for sponsor brands starts from here */
 .brand-container{
