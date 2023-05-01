@@ -67,10 +67,10 @@ section{
     cursor: pointer;
     font-size: 1.7rem;
 }
-  
+  /* Updated colors: After hovering: Black for text and orange after hovering */
   .btn:hover{
     background:rgba(255,165,0,2);
-    color:var(--orange);
+    color:black;
   }
   /* modifying nev-bar  */
 header{
@@ -299,6 +299,57 @@ color:#666;
 
 
 /* favorite */
+
+/* Styling for Favourite section starts from here */
+.Favorite {
+  margin-top: 3rem;
+  background-color: #444;
+}
+
+.Favorite .review-slider{
+  padding-bottom: 2rem;
+}
+
+/* Styling for the box used */
+.Favorite .box{
+  background-color: #edfeff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+}
+
+/* Styling for image inside the box */
+.Favorite .box img{
+  margin-top:3rem;
+  height: 30rem;
+  width: 53rem;
+  border-radius:2%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Styling for heading used */
+.Favorite .box h3{
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+/* Styling for paragraph text used inside the box */
+.Favorite .box p{
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Styling for start icons used inside the box */
+.Favorite .box .stars i{
+  color: #ffb81e;
+  font-size: 1.7rem;
+}
+
+
 
 /* booking */
 /* The css for booking section starts */
@@ -530,6 +581,51 @@ color:#666;
 
 /* reviews */
 
+/* Styling for review starts from here */
+.review {
+  margin-top: 3rem;
+  background-color: #fff6e3;
+}
+
+.review .review-slider{
+  padding-bottom: 2rem;
+}
+
+.review .box{
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  background-color: #f5f5f5;
+}
+
+.review .box img{
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.review .box h3{
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.review .box p{
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.review .box .stars i{
+  color: #ffb81e;
+  font-size: 1.7rem;
+}
+
+
+
 /* contacts */
 .contact {
     margin-top: 3rem;
@@ -649,7 +745,16 @@ color:#666;
   .footer .credit .tripjoy{
     color: var(--orange);
   }
-  
+  /* Styling for sponsor brands starts from here */
+.brand-container{
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.brand-container .brand-slider .swiper-wrapper img{
+height: 10rem;
+width: 25rem;
+}
 
 
 
@@ -735,4 +840,5 @@ body{
     }
   
   }
+  
   
